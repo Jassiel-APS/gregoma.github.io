@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        
+    <url>
+        <loc>https://gregoma.com/</loc>
+        <lastmod>2023-11-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="es" href="https://gregoma.com/"/>
+        
+        <!-- Main page images -->
+        <image:image>
+            <image:loc>https://gregoma.com/img/logos/logo_gregoma_dark.png</image:loc>
+            <image:title>GREGOMA Logo</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Important page sections -->
+    <url>
+        <loc>https://gregoma.com/#servicios</loc>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://gregoma.com/#contacto</loc>
+        <priority>0.8</priority>
+    </url>
+</urlset>
