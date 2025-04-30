@@ -86,7 +86,7 @@
                     <p>Nos adaptamos a sus requerimientos específicos para ofrecer soluciones a medida.</p>
                 </div>
                 <div class="about-image">
-                    <img src="./img/Baners/Nosotros.jpg" alt="Equipo GREGOMA">
+                    <img src="./img/Baners/Quienes somos.jpg" alt="Equipo GREGOMA">
                 </div>
             </div>
         </div>
@@ -110,7 +110,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <img src="./img/Baners/Logística Integral_2.jpg" alt="Logística Integral" class="service-image">
+                        <img src="./img/Baners/Logistica_Integral.png" alt="Logística Integral" class="service-image">
                     </div>
                     <div class="service-content">
                         <h3>Logística Integral</h3>
@@ -119,7 +119,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <img src="./img/Baners/Logistica_Integral.jpg" alt="Despacho Aduanal" class="service-image">
+                        <img src="./img/Baners/Despacho_Aduanal.png" alt="Despacho Aduanal" class="service-image">
                     </div>
                     <div class="service-content">
                         <h3>Despacho Aduanal</h3>
@@ -272,38 +272,42 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm" class="needs-validation" novalidate>
+                    <form id="contactForm" action="https://formsubmit.co/39cc506a7d934704cce92a0ccd8b6182" method="POST" class="needs-validation" novalidate>
+                        <input type="hidden" name="_next" value="#contacto"> <!-- Change to local anchor -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
                                     <label for="name"><i class="fas fa-user me-2"></i>Nombre completo</label>
                                     <div class="invalid-feedback">Por favor ingresa tu nombre</div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Correo" required>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Correo" required>
                                     <label for="email"><i class="fas fa-envelope me-2"></i>Correo electrónico</label>
                                     <div class="invalid-feedback">Por favor ingresa un correo válido</div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="tel" class="form-control" id="phone" placeholder="Teléfono" required pattern="[0-9]{10}">
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono" required pattern="[0-9]{10}">
                                     <label for="phone"><i class="fas fa-phone me-2"></i>Teléfono</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Asunto" required>
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto" required>
                                     <label for="subject"><i class="fas fa-tag me-2"></i>Asunto</label>
                                     <div class="invalid-feedback">Por favor ingresa el asunto</div>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" id="message" placeholder="Mensaje" style="height: 150px" required></textarea>
+                                    <textarea class="form-control" id="message" name="message" placeholder="Mensaje" style="height: 150px" required></textarea>
                                     <label for="message"><i class="fas fa-comment me-2"></i>Mensaje</label>
                                     <div class="invalid-feedback">Por favor escribe tu mensaje</div>
                                 </div>
@@ -326,21 +330,24 @@
     </a>
 
     <!-- Modal de Confirmación -->
-<div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="confirmationModalLabel">¡Mensaje Enviado!</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        Gracias por contactarnos. Nos comunicaremos contigo a la brevedad.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
-      </div>
+<div class="modal fade" id="confirmationModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-confirm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="icon-box">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h4 class="modal-title">¡Mensaje Enviado!</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Gracias por contactarnos. Nos comunicaremos contigo a la brevedad.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendido</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- Footer -->
